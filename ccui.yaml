@@ -1,16 +1,16 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: ccui
+  name: ccuijen
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: ccui
+        app: ccuijen
     spec:
       containers:
-      - name: ccui
+      - name: ccuijen
         image: docker.io/dkori/three:ccui
         ports:
         - containerPort: 80
